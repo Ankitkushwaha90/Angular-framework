@@ -1,0 +1,33 @@
+Step 1=>create project for commands:And then All Work on newproject folder. which is made by you.
+------------------------------------------------------------------------
+ng new newproject
+
+------------------------------------------------------------------------
+Step 2=>Error solve for commads:
+------------------------------------------------------------------------
+$env:NODE_OPTIONS = "--openssl-legacy-provider"
+
+------------------------------------------------------------------------
+Step 3=>Start for server:
+------------------------------------------------------------------------
+npm start
+------------------------------------------------------------------------
+Step 4=>Install package realated to bootrap & jquery
+------------------------------------------------------------------------
+npm install bootstarp
+npm install jquery
+------------------------------------------------------------------------
+Step 5=>And then include your angular.json And then Script file include neary in 32 lines arround
+------------------------------------------------------------------------
+"styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
+            ],
+ "scripts": [ "./node_modules/bootstrap/dist/js/bootstrap.js"]
+          },
+------------------------------------------------------------------------
+Step 5=>And then Create Component And Then Created Automatic on this location -> newproject\src\app\ after -> newproject\scr\app\Mynewcomponent\Hello
+------------------------------------------------------------------------
+ng generate component Mynewcomponent/Hello
+------------------------------------------------------------------------
+
