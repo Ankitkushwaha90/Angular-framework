@@ -3,7 +3,7 @@ Step 1=>create project for commands:And then All Work on newproject folder. whic
 ng new newproject
 
 ------------------------------------------------------------------------
-Step 2=>Error solve for commads:
+Step 2=>Error solve from commads run this commands live project:
 ------------------------------------------------------------------------
 $env:NODE_OPTIONS = "--openssl-legacy-provider"
 
