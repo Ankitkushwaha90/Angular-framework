@@ -26,7 +26,22 @@ Step 5=>And then include your angular.json And then Script file include neary in
  "scripts": [ "./node_modules/bootstrap/dist/js/bootstrap.js"]
           },
 ------------------------------------------------------------------------
-Step 5=>And then Create Component And Then Created Automatic on this location -> newproject\src\app\ after -> newproject\scr\app\Mynewcomponent\Hello
+
+steup 6=>we should be change angular change file
+
+------------------------------------------------------------------------
+      },
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "docs",
+
+------------------------------------------------------------------------
+Steup 7=>And then Create Component And Then Created Automatic on this location -> newproject\src\app\ after -> newproject\scr\app\Mynewcomponent\Hello
 ------------------------------------------------------------------------
 ng generate component Mynewcomponent/Hello
 ------------------------------------------------------------------------
@@ -38,129 +53,12 @@ git add README.md
 git commit -m "first commit"
 git branch -M main
 git push -u origin main
--------------------------------------------------------------------------
-we should be change angular change file
 
-------------------------------------------------------------------------
-      },
-      "root": "",
-      "sourceRoot": "src",
-      "prefix": "app",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:browser",
-          "options": {
-            "outputPath": "docs",
-
-------------------------------------------------------------------------
-{
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "cli": {
-    "analytics": "5588afd8-cf68-48ed-82ba-df7bf9a8c1c7"
-  },
-  "version": 1,
-  "newProjectRoot": "projects",
-  "projects": {
-    "github-hosting-project": {
-      "projectType": "application",
-      "schematics": {
-        "@schematics/angular:application": {
-          "strict": true
-        }
-      },
-      "root": "",
-      "sourceRoot": "src",
-      "prefix": "app",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:browser",
-          "options": {
-            "outputPath": "docs",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.app.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
-          },
-          "configurations": {
-            "production": {
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
-                }
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
-              "outputHashing": "all"
-            },
-            "development": {
-              "buildOptimizer": false,
-              "optimization": false,
-              "vendorChunk": true,
-              "extractLicenses": false,
-              "sourceMap": true,
-              "namedChunks": true
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "configurations": {
-            "production": {
-              "browserTarget": "github-hosting-project:build:production"
-            },
-            "development": {
-              "browserTarget": "github-hosting-project:build:development"
-            }
-          },
-          "defaultConfiguration": "development"
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "github-hosting-project:build"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
-          }
-        }
-      }
-    }
-  },
-  "defaultProject": "github-hosting-project"
-}
 --------------------------------------------------------------------------
+
+steup 8=> use for commands
+--------------------------------------------------------------------------
+ng build --output-path docs --base-href <github-hosting-project>
+
+----------------------------------------------------------------------------
 
