@@ -16,6 +16,8 @@ Step 4=>Install package realated to bootrap & jquery
 ------------------------------------------------------------------------
 npm install bootstarp
 npm install jquery
+ng g service userdata
+ng g c componentname
 ------------------------------------------------------------------------
 Step 5=>And then include your angular.json And then Script file include neary in 32 lines arround
 ------------------------------------------------------------------------
